@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultando CPF</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="container">
+
+        <form method="get" action=".">
+
+            <h1>Informe o CEP</h1>
+            <p>Digite o CEP e ao sair o campo o endereço será completado. Pode utilizar a tecla TAB após digitar o CEP.</p>
+
+            <div class="divCep">
+
+                <label>Cep:
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        class="accessCep inputAll" onblur="pesquisacep(this.value);" />
+                </label>
+
+            </div>
+
+            <div class="divCep">
+
+                <label>Rua:
+                    <input type="text" name="street" id="street" class="accessStreet inputAll">
+                </label>
+            </div>
+
+            <div class="divCep">
+
+                <label>Bairro:
+                    <input type="text" name="district" id="district" class="accessDistrict inputAll">
+                </label>    
+            </div>
+
+            <div class="divCep">
+
+                <label>Cidade:
+                    <input type="text" name="city" id="city" class="accessCity inputAll">
+                </label>
+            </div>
+
+            <div class="divCep">
+
+                <label>Estado:
+                    <input type="text" name="state" id="state" class="accessState inputAll" maxlength="2">
+                </label>
+            </div>
+
+            <div class="divCep">
+
+                <label>IBGE:
+                    <input type="text" name="ibge" id="ibge" class="accessIbge inputAll">
+                </label>
+            </div>
+
+        </form>
+
+    </section>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

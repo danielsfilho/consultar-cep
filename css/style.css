@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+}
+
+section h1{
+    color: green;
+}
+
+section p{
+    margin: 20px 0;
+}
+
+.inputAll{
+    font-size: 20px;
+    height: 30px;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.divCep{
+    margin: 20px 0;
+}
+
+.accessCep{
+    width: 120px;
+}
+
+.accessStreet{
+    width: 500px;
+    
+}
+
+.accessDistrict{
+    width: 350px;
+}
+
+.accessCity{
+    width: 350px;
+}
+
+.accessState{
+    width: 50px;
+}
+
+.accessIbge{
+    width: 100px;
+}
