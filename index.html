@@ -13,57 +13,66 @@
 
         <form method="get" action=".">
 
+
+
             <h1>Informe o CEP</h1>
             <p>Digite o CEP e ao sair o campo o endereço será completado. Pode utilizar a tecla TAB após digitar o CEP.</p>
 
-            <div class="divCep">
 
-                <label>Cep:
-                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                        class="accessCep inputAll" onblur="pesquisacep(this.value);" />
-                </label>
-
-            </div>
 
             <div class="divCep">
-
-                <label>Rua:
-                    <input type="text" name="street" id="street" class="accessStreet inputAll">
-                </label>
+                <label for="cep">Cep:</label>
+                <input name="cep" type="text" id="cep" value="" size="10">
+                <small>00000-000</small>
             </div>
+
+
 
             <div class="divCep">
-
-                <label>Bairro:
-                    <input type="text" name="district" id="district" class="accessDistrict inputAll">
-                </label>    
+                <label for="logradouro">Rua:</label>
+                <input type="text" name="street" id="logradouro" class="accessStreet inputAll">
+                <small></small>
             </div>
+
+
 
             <div class="divCep">
-
-                <label>Cidade:
-                    <input type="text" name="city" id="city" class="accessCity inputAll">
-                </label>
+                <label for="bairro">Bairro:</label>   
+                <input type="text" name="district" id="bairro" class="accessDistrict inputAll">
+                 <small></small>
             </div>
+
+
 
             <div class="divCep">
-
-                <label>Estado:
-                    <input type="text" name="state" id="state" class="accessState inputAll" maxlength="2">
-                </label>
+                <label for="localidade">Cidade:</label>
+                <input type="text" name="city" id="localidade" class="accessCity inputAll">
+                <small></small>
             </div>
+
+
 
             <div class="divCep">
-
-                <label>IBGE:
-                    <input type="text" name="ibge" id="ibge" class="accessIbge inputAll">
-                </label>
+                <label for="uf">Estado:</label>
+                <input type="text" name="state" id="uf" class="accessState inputAll">
+                <small></small>
             </div>
+
+
+
+            <div class="divCep">
+                <label for="ibge">IBGE:</label>
+                <input type="text" name="ibge" id="ibge" class="accessIbge inputAll">
+                <small></small>
+            </div>
+
+
+
 
         </form>
 
     </section>
 
-    <script src="/js/index.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
